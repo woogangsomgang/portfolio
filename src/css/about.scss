@@ -1,0 +1,103 @@
+.about {
+    .about-me {
+
+        margin-bottom: 42px;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-size: 78px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 20px;
+            letter-spacing: 37%;
+            margin-top: -10px;
+        }
+    }
+
+
+    .about-imgs {
+        margin: 0 auto;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+
+    .line {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(92, 92, 92, 0.185);
+        margin-bottom: 83px;
+    }
+
+    .about-text {
+        text-align: end;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 160px;
+        gap: 0.4em;
+
+        p:nth-of-type(1) {
+            font-weight: bold;
+            font-size: 23px;
+        }
+
+        p:nth-of-type(2) {
+            font-size: 15px;
+        }
+
+        p:nth-of-type(3) {
+            font-size: 15px;
+        }
+    }
+
+    .skills {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        p:nth-of-type(1) {
+            width: 100%;
+            font-size: 78px;
+            font-weight: bold;
+            margin-bottom: 90px;
+        }
+
+        .skill-name {
+            font-size: 24px;
+            font-weight: bold;
+            width: 100%;
+            letter-spacing: 2%;
+        }
+
+
+        .skill-list {
+            width: 100%;
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .skill-list li {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .skill-list img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+    }
+
+}

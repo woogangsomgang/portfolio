@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-label="Figma logo" role="img">
+  <rect width="512" height="512" rx="32" fill="#FFF"/>
+  <g transform="translate(116 76)">
+    <rect x="0" y="0" width="140" height="120" rx="60" fill="#F24E1E"/>
+    <rect x="140" y="0" width="140" height="120" rx="60" fill="#FF7262"/>
+    <rect x="0" y="120" width="140" height="120" rx="60" fill="#A259FF"/>
+    <circle cx="210" cy="180" r="70" fill="#1ABCFE"/>
+    <rect x="0" y="240" width="140" height="120" rx="60" fill="#0ACF83"/>
+  </g>
+</svg>

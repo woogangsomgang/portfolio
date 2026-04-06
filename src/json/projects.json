@@ -1,0 +1,24 @@
+[
+    {
+        "id":"0",
+
+        "title":"On-jib",
+        "skills" : "html, css, javascript",
+        "listImg" : "/assets/images/onjib_thumbnail.png",
+
+
+        "subtitle":"(입양동물 후원/봉사 신청 사이트)",
+        "members" : "3명",
+        "part" : "입양문의, 후원신청, 봉사신청, 오시는 길",
+        "duration" : "한 달",
+        "detailImg" : "/assets/images/onjib_thumbnail.jpg",
+        "link" : "https://woogangsomgang.github.io/yunseo_onjib/",
+        "qna" : [
+        { "question" : "우리 사이트는 이렇게 탄생했어요", "answer" : " 답변 1 " },
+        { "question" : "제가 담당한 파트는 여기에요", "answer" : " 답변 2 " },
+        { "question" : "이런 부분이 어려웠어요", "answer" : " 답변 3 " },
+        { "question" : "이렇게 해결했어요", "answer" : " 답변 4 " }
+        ]
+    }
+    
+]
