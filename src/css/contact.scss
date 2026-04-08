@@ -1,22 +1,146 @@
 .contact {
     display: flex;
     justify-content: center;
-    margin-top: 140px;
-    gap: 202px;
-}
-
-.contact-text{
-    font-size: 16px;
-    width: 420px;
-    display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    .contact-method{
-        display: flex;
-        gap: 40px;
+    margin-top: 140px;
+    gap: clamp(40px, 8vw, 202px);
+
+    .contact-logo {
+        flex: 0 0 45%;      // 비율 고정
+        max-width: 45%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            flex: 0 0 100%;
+            max-width: 500px;
+            margin: 30px 0;
+        }
+
+        @media (max-width: 480px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
     }
-    .method-name{
-        font-weight: bold;
+
+    .contact-text {
+        flex: 0 0 40%;      // 비율 고정
+        font-size: clamp(16px, 1.2vw, 16px);  // 글씨도 같이 줄어들게
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: auto; 
+        gap: 100px;     
+
+        .contact-method {
+            display: flex;
+            gap: clamp(16px, 3vw, 40px);  // gap도 유동적으로
+        }
+
+        .method-name {
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            flex: 0 0 100%;
+            font-size: 14px;
+            flex-direction: column;
+            gap: 24px;
+            align-items: flex-start;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 13px;
+
+            .contact-method {
+                gap: 20px;
+                width: 100%;
+                word-break: break-all;
+            }
+        }
+    }
+
+    // 태블릿 이하 세로 전환
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        margin-top: 80px;
+    }
+
+    @media (max-width: 480px) {
+        margin-top: 40px;
+        gap: 40px;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .contact-logo {
+
+
+        @media (max-width: 768px) {
+            width: 100%;
+            max-width: 500px;
+            margin: 30px 0 30px 0;
+        }
+
+        @media (max-width: 480px) {
+            width: 100%;
+        }
+
+        img {
+
+
+            @media (max-width: 768px) {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .contact-text {
+        font-size: 18px;
+        width: 420px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+
+
+        .contact-method {
+            display: flex;
+            gap: 40px;
+
+
+        }
+
+        .method-name {
+            font-weight: bold;
+        }
+
+        // 태블릿
+        @media (max-width: 768px) {
+            width: 100%;
+            font-size: 18px;
+            flex-direction: column;
+            gap: 24px;
+            align-items: flex-start;
+
+        }
+
+        // 모바일
+        @media (max-width: 480px) {
+            width: 100%;
+            font-size: 13px;
+
+            .contact-method {
+                gap: 20px;
+                width: 100%;
+                word-break: break-all;
+            }
+        }
     }
 }
-

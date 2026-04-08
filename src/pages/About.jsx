@@ -11,20 +11,17 @@ function About() {
     useEffect(() => {
         const topEls = [ref1.current, ref2.current, ref3.current]
 
-        // 초기 상태 숨김
         topEls.forEach(el => {
             if (!el) return
             el.style.opacity = '0'
             el.style.transform = 'translateY(20px)'
         })
 
-        // 페이지 진입 시 순차 등장
         const delays = [0, 600, 1200]
         const timers = topEls.map((el, i) =>
             setTimeout(() => { if (el) fadeInUp(el, 1400) }, delays[i])
         )
-
-        // skills 안의 직계 자식들 전부 스크롤 감지
+        
         const skillChildren = skillsRef.current
             ? Array.from(skillsRef.current.children)
             : []
@@ -65,13 +62,13 @@ function About() {
             </div>
 
             <div className="about-imgs" ref={ref2}>
-                <img src="./assets/images/profile.jpg" alt="selfie" />
-                <img src="./assets/images/code.png" alt="intro" />
+                <img  className="img-small" src="./assets/images/profile.jpg" alt="selfie" />
+                <img className="img-large" src="./assets/images/code.png" alt="intro" />
             </div>
 
             <div className="about-text" ref={ref3}>
                 <p>저는 음악과 대화를 사랑해요 </p>
-                <p>사랑하는 음악가 대화가 함께라면 어떤 프로젝트든 완성 시킬 수 있어!</p>
+                <p>음악과 대화가 함께라면 어떤 프로젝트든 완성 시킬 수 있어!</p>
                 <p>소통을 두려워하지 않는 개발자 <strong>진윤서</strong> 입니다.</p>
             </div>
 

@@ -5,6 +5,7 @@ import Detail from './pages/Detail';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import Index from './pages/Index';
+import './css/common.scss' 
 
 function App() {
   const headerRef = useRef(null)

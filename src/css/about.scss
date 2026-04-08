@@ -8,13 +8,25 @@
         h2 {
             font-size: 78px;
             margin: 0;
+
+            @media (max-width :480px) {
+                font-size: 60px;
+                line-height: 0.7;
+                margin-bottom: 12px;
+            }
         }
 
         p {
             font-size: 20px;
             letter-spacing: 37%;
-            margin-top: -10px;
+            margin-bottom: 20px;
+
+            @media (max-width :480px) {
+                font-size: 18px;
+            }
+
         }
+
     }
 
 
@@ -23,27 +35,58 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
+        gap: 16px;
 
+        .img-small {
+            width: 35%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .img-large {
+            width: 65%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+
+            .img-small,
+            .img-large {
+                width: 100%;
+            }
+        }
     }
 
     .line {
         width: 100%;
         height: 1px;
         background-color: rgba(92, 92, 92, 0.185);
-        margin-bottom: 83px;
+        margin-bottom: 23px;
     }
 
     .about-text {
         text-align: end;
         display: flex;
         flex-direction: column;
-        margin-top: 15px;
+        margin-top: 30px;
         margin-bottom: 160px;
         gap: 0.4em;
+
+        @media (max-width:480px) {
+            gap: 0.1em;
+            margin-bottom: 150px;
+            margin-top: 10px;
+
+        }
 
         p:nth-of-type(1) {
             font-weight: bold;
             font-size: 23px;
+            @media (max-width:480px) {
+                margin-top: 10px;
+            }
         }
 
         p:nth-of-type(2) {
@@ -52,6 +95,23 @@
 
         p:nth-of-type(3) {
             font-size: 15px;
+        }
+
+        @media (max-width:480px) {
+
+            p:nth-of-type(1) {
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            p:nth-of-type(2) {
+                font-size: 12px;
+            }
+
+            p:nth-of-type(3) {
+                font-size: 12px;
+            }
+
         }
     }
 
@@ -97,6 +157,45 @@
             height: 100%;
             object-fit: contain;
             display: block;
+        }
+
+        @media (max-width :480px) {
+            p:nth-of-type(1) {
+                width: 100%;
+                font-size: 60px;
+                font-weight: bold;
+                margin-bottom: 60px;
+            }
+
+            .skill-name {
+                font-size: 20px;
+                width: 100%;
+                letter-spacing: 2%;
+            }
+
+
+            .skill-list {
+                width: 100%;
+                display: flex;
+                gap: 20px;
+                list-style: none;
+                align-items: center;
+            }
+
+            .skill-list li {
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .skill-list img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                display: block;
+            }
         }
     }
 
